@@ -114,6 +114,4 @@ impl<A, D> LazyBuffer<A, D> {
     pub fn stride(&self, arg: &[usize]) -> LazyBuffer<A, D> {
         LazyBuffer { _np: self._np.slice_move(arg) }
     }
-
-
 }
